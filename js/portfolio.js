@@ -1,5 +1,7 @@
 import config from './config.mjs';
 
-(() => {
-  config();
-})();
+((document, $) => {
+  $(document).ready(() => {
+    config();
+  });
+})(document, $);

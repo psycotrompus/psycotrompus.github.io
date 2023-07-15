@@ -5,8 +5,10 @@ import RevealNotes from '/reveal/plugin/notes/notes.esm.js';
 export default function config () {
   const reveal = new Reveal({
     transition: 'convex',
-    minScale: 0.1,
-    maxScale: 1.0,
+    width: '100%',
+    minScale: 0.2,
+    maxScale: 2.0,
+    margin: 0.04,
     plugins: [
       RevealMarkdown,
       RevealNotes
